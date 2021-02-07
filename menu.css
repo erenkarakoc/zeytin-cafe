@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "HermanoAlto";
+  src: url(./fonts/HermanoAlto\ Round.ttf);
+}
+@font-face {
+  font-family: Hickory Jack;
+  src: url(./fonts/Hickory\ Jack\ Light.ttf) format("ttf");
+}
+
+:root {
+  --yesil: rgb(38, 51, 25);
+  --daha-acik-yesil: rgb(77, 128, 29);
+  --acik-yesil: rgb(71, 97, 47);
+  --acik-yesil-opc: rgba(71, 97, 47, 0.8);
+  --acik-yesil-opc-2: rgba(71, 97, 47, 0.6);
+  --turuncu: rgb(204, 75, 10);
+  --turuncu-opc: rgba(204, 75, 10, 0.8);
+  --turuncu-opc-2: rgba(204, 75, 10, 0.6);
+  --krem: rgb(219, 221, 162);
+  --krem-opc: rgba(219, 221, 162, 0.9);
+  --krem-opc-2: rgba(219, 221, 162, 0.8);
+  --krem-opc-3: rgba(219, 221, 162, 0.6);
+  --kapali-krem: rgb(190, 191, 140);
+  --grey-40: rgb(40, 40, 40);
+  --grey-30: rgb(30, 30, 30);
+  --grey-20: rgb(20, 20, 20);
+  --grey-160: rgb(160, 160, 160);
+  --grey-150: rgb(150, 150, 150);
+  --grey-140: rgb(140, 140, 140);
+}
+
+html {
+  overflow-y: scroll;
+}
+
+* {
+  font-family: sans-serif;
+  transition: color 75ms ease-in-out;
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background: var(--turuncu-opc);
+}
+
+*::-moz-selection {
+  background: var(--turuncu-opc);
+}
+
+::-webkit-scrollbar {
+  background-color: var(--yesil);
+  width: 1rem;
+  height: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--acik-yesil-opc);
+  border: solid 0.4rem var(--yesil);
+  border-radius: 10rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--acik-yesil);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--acik-yesil-opc-2);
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--yesil);
+  box-sizing: border-box;
+}
+
+.header-container {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1280px;
+}
+
+.body-container {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1280px;
+}
+
+.navbar {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  user-select: none;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  cursor: pointer;
+  width: 5rem;
+}
+
+.nav-items {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-items a {
+  font-family: HermanoAlto, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--krem);
+}
+
+.nav-items a:hover {
+  color: var(--turuncu);
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3rem 0 3rem 0;
+}
+
+.menusu {
+  user-select: none;
+  padding: 0;
+  border: var(--turuncu) solid 0.2rem;
+  border-radius: 1rem;
+  width: 30rem;
+  box-shadow: 0 0 4rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.popup {
+  position: absolute;
+  border-radius: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Turk kahvesi */
+.tkahve {
+  width: 6rem;
+  top: 35rem;
+  left: 26rem;
+}
+.tkahve-img {
+  position: relative;
+  right: 11rem;
+  top: -5rem;
+  visibility: hidden;
+  width: 10rem;
+  border: var(--turuncu) solid 0.2rem;
+  border-radius: 1rem;
+}
+.tkahve:hover .tkahve-img {
+  visibility: visible;
+}
+
+/* Bira */
+.bira {
+  width: 2.5rem;
+  top: 45rem;
+  left: 14rem;
+}
+.bira-img {
+  position: relative;
+  left: 4rem;
+  top: -5rem;
+  visibility: hidden;
+  width: 10rem;
+  border: var(--turuncu) solid 0.2rem;
+  border-radius: 1rem;
+}
+.bira:hover .bira-img {
+  visibility: visible;
+}
+
+/* Biftek */
+.biftek {
+  width: 3rem;
+  top: 43rem;
+  left: 67.5rem;
+}
+
+.biftek-img {
+  position: relative;
+  left: -13rem;
+  top: -5rem;
+  visibility: hidden;
+  width: 12rem;
+  border: var(--turuncu) solid 0.2rem;
+  border-radius: 1rem;
+}
+
+.biftek:hover .biftek-img {
+  visibility: visible;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer i {
+  position: relative;
+  left: 3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--krem-opc);
+}
+
+footer i:hover {
+  color: var(--turuncu);
+}
+
+footer p {
+  user-select: none;
+  font-family: HermanoAlto, sans-serif;
+  color: var(--krem-opc);
+  font-size: 0.8rem;
+}
+
+footer p:hover {
+  color: var(--turuncu);
+}

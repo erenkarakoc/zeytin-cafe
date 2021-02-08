@@ -78,7 +78,7 @@ body {
   padding: 0;
   background-color: var(--yesil);
   box-sizing: border-box;
-  background-image: url(/img/ethnicity.svg);
+  background-image: url(./img/ethnicity.svg);
   background-repeat: repeat-y;
   background-position: right;
   background-size: 5rem;

@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: Hickory Jack;
-  src: url(./fonts/Hickory\ Jack\ Light.ttf) format("ttf");
+  src: url(./fonts/Hickory\ Jack\ Light.ttf);
 }
 
 :root {

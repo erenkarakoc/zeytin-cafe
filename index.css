@@ -78,7 +78,7 @@ body {
   padding: 0;
   background-color: var(--yesil);
   box-sizing: border-box;
-  background-image: url(img/ethnicity.svg);
+  background-image: url(tree/main/img/ethnicity.svg);
   background-repeat: repeat-y;
   background-position: right;
   background-size: 5rem;
@@ -208,7 +208,7 @@ body {
   flex-direction: row;
   align-items: center;
   background-image: linear-gradient(var(--krem-opc), var(--krem-opc)),
-    url(/img/atmosfer.jpg);
+    url(tree/main/img/atmosfer.jpg);
   background-size: 120%;
   background-position: center;
   border-radius: 1rem;

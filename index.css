@@ -277,6 +277,7 @@ body {
   font-weight: lighter !important;
   color: var(--turuncu);
   font-size: 4.5rem;
+  z-index: 5 !important;
 }
 
 .vegan-burger {

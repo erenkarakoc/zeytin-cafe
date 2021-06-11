@@ -39,7 +39,6 @@ html {
   font-family: sans-serif;
   transition: color 75ms ease-in-out;
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
 }
 
 *::selection {
@@ -139,7 +138,6 @@ body {
 }
 
 .container {
-  scroll-snap-align: end;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -320,7 +318,6 @@ body {
 }
 
 .story {
-  scroll-snap-align: center;
   text-align: center;
   position: relative;
   margin-bottom: 12rem;

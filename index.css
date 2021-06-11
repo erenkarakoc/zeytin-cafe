@@ -70,6 +70,25 @@ html {
   background-color: var(--acik-yesil);
 }
 
+/* Moz Scroll */
+
+.scrollbar {
+  background-color: var(--yesil);
+  width: 1rem;
+  height: 0;
+}
+.scroller {
+  background-color: var(--acik-yesil-opc-2);
+  border: solid 0.4rem var(--yesil);
+  border-radius: 10rem;
+}
+.scroller:hover {
+  background-color: var(--acik-yesil-opc);
+}
+.scroller:active {
+  background-color: var(--acik-yesil);
+}
+
 body {
   position: relative;
   width: 100%;
